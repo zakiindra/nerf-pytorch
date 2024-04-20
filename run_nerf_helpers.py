@@ -66,7 +66,14 @@ def get_embedder(multires, i=0):
 # Model
 class NeRF(nn.Module):
     def __init__(self, D=8, W=256, input_ch=3, input_ch_views=3, output_ch=4, skips=[4], use_viewdirs=False):
-        """ 
+        """
+        D: number of layers
+        W: number of hidden units
+        input_ch: number of input channels
+        input_ch_views: number of input channels for viewdirs
+        output_ch: number of output channels
+        skips: layers to skip connections
+        use_viewdirs: whether to use viewdirs as input
         """
         super(NeRF, self).__init__()
         self.D = D
