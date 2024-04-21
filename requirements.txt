@@ -1,5 +1,4 @@
-torch
-torchvision
+torch==1.13.1
 imageio
 imageio-ffmpeg
 matplotlib
