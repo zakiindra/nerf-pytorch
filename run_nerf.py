@@ -11,6 +11,7 @@ from tqdm import tqdm, trange
 
 import matplotlib.pyplot as plt
 
+from opts import config_parser
 from run_nerf_helpers import *
 
 from load_llff import load_llff_data
